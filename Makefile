@@ -29,7 +29,7 @@ output/hashes.txt: output/database.sqlite output/NationalReadMe.pdf output/State
 	echo "\nCurrent ouput md5 hashes:" >> output/hashes.txt
 	md5 output/*.csv >> output/hashes.txt
 	md5 output/*.sqlite >> output/hashes.txt
-	md5 output/pdfs/*.pdf >> output/hashes.txt
+	md5 output/*.pdf >> output/hashes.txt
 hashes: output/hashes.txt
 
 output/NationalReadMe.pdf: input/names/NationalReadMe.pdf
